@@ -1,0 +1,407 @@
+<!-- <?php
+	if (isset($_POST["nom"])) {
+		$message = "Ce message vous a été envoyé via la page contact du site certifeosante.fr
+		Nom : " . $_POST["nom"] . " 
+		Prenom : " . $_POST["prenom"] . " 
+		Email : " . $_POST["email"] . " 
+	
+		$retour = mail("leocohenpro@gmail.com", "Prise de contact : " . $_POST["nom"] . " " . $_POST["prenom"], $message, "From:contact@certifeosante.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+		if ($retour) {
+			echo '<div class="alert alert-success d-flex align-items-center justify-content-center gap-3" role="alert" style="margin-top: 180px">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+						<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+					</svg>
+					<div>
+					Votre demande a bien été prise en compte !
+					</div>
+				</div>';
+		}
+	}
+?> -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/animate.min.css" />
+
+    <script src="script.js" defer></script>
+    <title>Sofian Ariche</title>
+  </head>
+
+  <body>
+    <!-- ------debut header--------- -->
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-branding text-decoration-none fw-bold m-2"
+            ><img src="logo/So.png" alt="/"> ARICHE SOFIIAN</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="." class="nav-link fw-bold text-primary">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold text-primary">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projets" class="nav-link fw-bold text-primary">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a href="assets/cv_Sofian.pdf" class="nav-link fw-bold text-primary">Mon CV</a>
+            </li>
+            <li class="nav-item">
+              <a href="#formulaire" class="nav-link fw-bold text-primary">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <!-- -------------fin header-------------- -->
+      <div class="container text-center">
+        <div class="presentation rounded-5">
+            <!-- <h2
+            id="dev"
+            class="fw-bold text-dark animate__animated animate__backInRight my-5 rounded-5"
+          >
+            DÉVELOPPEUR WEB & WEB MOBILES
+          </h2> -->
+        </div>
+        <!-- <img
+          src="assets/language.png"
+          alt=""
+          srcset=""
+          style="height: 100%; width: 100%"
+        /> -->
+
+        <section id="language rounded-5 text-center">
+          <div class="center">
+            <img
+              src="assets/language.png"
+              alt=""
+              srcset=""
+              style="height: 100%; width: 100%"
+            />
+
+            <h1 class="my-5">Connaissances</h1>
+            <div class="skill-container fw-bold">
+              <p class="my-3">html</p>
+              <!-- <p>56%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level html"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">css</p>
+              <!-- <p>56%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level html"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">wordpress</p>
+              <!-- <p>48%</p> -->
+              <div class="skill-bar fw-bold">
+                <div class="skill-level css"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">swift</p>
+              <!-- <p>22%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level sass"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">javascript</p>
+              <!-- <p>28%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level js"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">node js</p>
+              <!-- <p>28%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level js"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">sql</p>
+              <!-- <p>20%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level sql"></div>
+              </div>
+            </div>
+            <div class="skill-container fw-bold">
+              <p class="my-3">php</p>
+              <!-- <p>34%</p> -->
+              <div class="skill-bar">
+                <div class="skill-level php"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ------- fin presentation ------- -->
+
+      <div class="competence rounded-5 wow text-center">
+        <h2 class="my-5 text-primary fw-bold">MES COMPÉTENCES ET PARCOURS</h2>
+        <div class="row">
+          <div class="col text-center fw-bold">
+            <h3 class="mb-4 m-5">
+              En tant que développeur web junior, je suis convaincu que ma
+              passion pour le développement web et ma volonté d'apprendre
+              continuellement me permettront de faire une contribution
+              significative à une entreprise.
+              <br /><br />
+              J'ai acquis une solide formation en développement web. J'ai
+              également une expérience pratique en travaillant sur des projets
+              de développement web, ce qui m'a permis de développer mes
+              compétences en résolution de problèmes et de collaboration en
+              équipe.
+              <br /><br />
+              En tant que personne curieuse et avide de connaissances, je suis
+              toujours à la recherche de nouvelles technologies et de nouvelles
+              tendances en développement web. Je suis motivé pour développer mes
+              compétences en programmation et découvrir de nouvelles façons de
+              résoudre les problèmes.
+              <br /><br />
+              Je suis convaincu que mes compétences en développement web, ma
+              passion pour l'apprentissage continu et mon travail d'équipe me
+              permettront de réussir dans n'importe quel environnement de
+              développement web. J'apporte une attitude positive et enthousiaste
+              à tout projet, et je suis toujours prêt à travailler dur pour
+              atteindre les objectifs fixés.
+            </h3>
+          </div>
+        </div>
+
+        <!-- <div id="imageText"> -->
+      </div>
+      <!-- -------fin competence ------->
+      <!-- projets -->
+      <div class="titreProjets text-center fw-bold my-5 rounded-5">
+        <h1 class="text-primary fw-bold">Vous pouvez découvrir quelques projets</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 rounded-5">
+            <img
+              src="assets/mario.jeux.jpg"
+              class="card-img-top rounded-5 z-3"
+              alt="..."
+              href=" https://sofianar.github.io/mario/"
+            />
+            <div class="card-body">
+              <h5 class="card-title my-3 fw-bold text-primary">Jeux mario</h5>
+              <p class="card-text">
+                Au cours de ma première expérience en JavaScript, j'ai entrepris
+                la création d'un jeu inspiré du célèbre personnage Mario. Ce
+                projet m'a permis d'apprendre les bases du langage de
+                programmation et de découvrir l'aspect ludique de la conception
+                de jeux vidéo. J'ai commencé par étudier les concepts de base
+                tels que les variables, les fonctions et les boucles, avant de
+                passer à des concepts plus avancés tels que la gestion des
+                événements et l'animation j'ai pu donner vie à mon jeu et créer
+                un environnement interactif pour les joueurs.
+              </p>
+              <a
+                href=" https://sofianar.github.io/mario/"
+                type="button btn"
+                class="btn btn-outline-primary rounded-5 my-5"
+                >Voir plus</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 rounded-5">
+            <img
+              src="assets/Calculatrice.blue.jpg"
+              class="card-img-top rounded-5"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title my-3 fw-bold text-primary">Calculatrice</h5>
+              <p class="card-text">
+                Dans ce projet, j'ai travaillé sur la création d'une
+                calculatrice simple mais fonctionnelle qui peut effectuer des
+                opérations mathématiques de base. Pour y parvenir, j'ai utilisé
+                des langages de programmation pour rendre la calculatrice
+                interactive et facile à utiliser. Tout au long de ce projet,
+                j'ai appris à travailler avec des concepts tels que les
+                fonctions, les boucles et les conditions pour créer des
+                algorithmes de calcul. J'ai également développé mes compétences
+                en matière de design et de mise en page en créant une interface
+                utilisateur intuitive pour la calculatrice.
+              </p>
+
+              <a
+                href=" https://sofianar.github.io/calculatrice/"
+                type="button btn"
+                class="btn btn-outline-primary rounded-5 mt-5"
+                >Voir plus</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 rounded-5">
+            <img
+              src="assets/certifeo.png "
+              class="card-img-top m-3"
+              style="height: 250px; width: 95%"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title my-3 fw-bold text-primary">Certiféo Santé</h5>
+              <p class="card-text">
+                Au cours de mon stage, j'ai eu l'opportunité de travailler sur
+                la conception d'un site web en utilisant l'architecture MVC
+                (Modèle-Vue-Contrôleur). Cette méthode de conception est
+                largement utilisée dans le développement de sites web pour sa
+                capacité à séparer clairement la présentation visuelle, la
+                logique de traitement et la gestion des données. Pendant tout le
+                processus de développement, j'ai appris à travailler en équipe
+                et à communiquer efficacement avec mes collègues et mon
+                superviseur. J'ai également acquis des compétences en résolution
+                de problèmes et en débogage, en particulier dans le contexte de
+                l'architecture MVC.
+                Cette expérience m'a permis de développer mes compétences
+                en développement web tout en acquérant une compréhension plus
+                approfondie de l'architecture MVC et de son utilisation dans le
+                domaine de la conception de sites web.
+                <!-- Pendant ma période de stage, j'ai eu l'opportunité de travailler
+                sur la conception d'un site web pour une entreprise. Ce projet
+                m'a permis de mettre en pratique mes connaissances en matière de
+                conception web et de travailler en étroite collaboration avec
+                l'équipe de développement pour créer un site qui répond aux
+                besoins spécifiques de l'entreprise. -->
+              </p>
+              <a
+                href="https://certifeosante.fr"
+                type="button btn"
+                class="btn btn-outline-primary rounded-5 my-2"
+                >Voir plus</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin projets -->
+      <!-- formulaire -->
+      <section id="formulaire" class="formulaire rounded-5">
+        <section style="display: flex; justify-content: center">
+          <div class="Contacteznous rounded-5">
+            <form action="/page-traitement-donnees" method="post">
+              <div>
+                <label for="nom">Votre Nom</label>
+                <input
+                  type="text"
+                  id="nom rounded-5"
+                  placeholder="Saisissez votre Nom"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Votre E-Mail</label>
+                <input
+                  type="email"
+                  id="email rounded-5"
+                  name="email"
+                  placeholder="monadressemail@mail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="sujet">Votre message ?</label>
+                <select name="sujet" id="sujet rounded-5" required>
+                  <option class="rounded-5" value="" disabled hidden>
+                    Choisissez le sujet de votre message
+                  </option>
+                  <option value="Reservation-de-groupe">Pour un projets</option>
+                  <option value="Reserver-le-Restaurant">Pour un stage</option>
+                  <option value="Vos-remarques-suggestions">
+                    Vos Remarques & Suggestions
+                  </option>
+                  <option value="Autres">Autres</option>
+                </select>
+              </div>
+              <div>
+                <label for="message">Votre Message</label>
+                <textarea
+                  id="message rounded-5"
+                  name="message"
+                  placeholder="Bonjour, je vous contacte car ....."
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  id="button b-blue"
+                  class="btn bouton bg-gradient fw-bold rounded-5 border-black"
+                >
+                  Envoyer le message
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+
+      <!--   contact -->
+      <footer class="contact">
+        <ul>
+          <li class="git">
+            <a href="https://github.com/sofianAr" class="git-hub"
+              ><img src="logo/GitHub-Logo.png" alt=""
+            /></a>
+          </li>
+          <li class="link">
+            <a
+              href="https://www.linkedin.com/in/sofian-ariche-a0b5a1259/"
+              class="linkzdin"
+              ><img src="logo/logo-linkedin.png" alt=""
+            /></a>
+          </li>
+          <li class="insta">
+            <a href="mailto:ariche.sofian@gmail.com" class="mail"
+              ><img src="logo/Mail_(Apple)_logo.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <p class="text-center mt-5 mb-3">Ariche sofian &copy; 2023</p>
+      </footer>
+    </div>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script src="wow.min.js"></script>
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
